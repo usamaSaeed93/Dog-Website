@@ -1,0 +1,98 @@
+html{
+  overflow-x: hidden;
+  font-family: "Nunito";
+}
+
+body{
+  overflow-x: hidden;
+  font-family:Inter,sans-serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media (max-width:600px){
+  .tile_image{
+    width:60%;
+    margin-bottom:15px;
+  }
+}
+
+.tile_2{
+  width: 200px;
+  height: 70px;
+@media (max-width:900px){
+  width:120px;
+  height:50px;
+}
+@media (max-width:600px){
+  width:80px;
+  height:30px;
+}
+}
+.dog_img{ 
+  width: 400px;
+  height: 300px;
+}
+@media (max-width: 900px) {
+  .dog_img{
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .dog_img{
+    display: none;
+  }
+}
+
+
+.dogImage{
+  @media screen and (max-width: 1200px) {
+    width:100%;
+    height:auto;
+  }
+  @media screen and (max-width: 900px) {
+    width:450px;
+    height:auto;
+  }
+}
+.dot {
+ 
+  /* bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%); */
+  width: 6px;
+  height: 6px;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.active {
+  font-weight: bold;
+  cursor: pointer;
+}
+@media  screen and (max-width:900px) {
+  .active{
+    display:none;
+  }
+}
+/* .active ::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+} */
+
+.active:active{
+  font-weight: bold;
+}
