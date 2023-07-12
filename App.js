@@ -10,6 +10,7 @@ import OtherPosts from './Components/HomeComponents/Blog/OtherPosts'
 import OurPosts from './Components/HomeComponents/Blog/OurPosts'
 import Contacts from './Components/HomeComponents/Contact Us/Contacts';
 import Footer from './Layout/Footer'
+import Banner from './Components/HomeComponents/Banner'
 import Navbar from './Layout/Navbar'
 function App() {
   return (
@@ -18,14 +19,14 @@ function App() {
   {/* <Home /> */}
   {/* <TopSection /> */}
   <Box sx={{
-    width:"100vw",
+    width:"100%",
     maxWidth:"2000px",
     display:'flex',
     justifyContent:"center",
     flexDirection:"column",
   margin:"auto",
     '@media (max-width:900px)':{
-width:"95%",
+width:"100%",
 margin:"auto",
 overflowX:"hidden"
 
@@ -33,13 +34,14 @@ overflowX:"hidden"
   }} >
 <NavbarTop />
   <Home />
+  <Banner />
   <AllServices />
   <Specials />
   <ProductSection />
   <NewsLetter />
   <OtherPosts />
-  <OurPosts />
   <Contacts />
+  <OurPosts />
   <Footer />
 
   </Box>

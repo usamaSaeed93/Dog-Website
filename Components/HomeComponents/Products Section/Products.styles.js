@@ -3,6 +3,9 @@ export const productSectionStyles = {
       display: "flex",
       flexDirection: "row",
       justifyContent: "center",
+      maxWidth:"1300px",
+      margin:"auto",
+      marginTop:"130px",
       '@media (max-width:900px)': {
         flexDirection: "column",
         width: "100%",
@@ -24,7 +27,10 @@ export const productSectionStyles = {
       variant: "body1",
       fontWeight: 800,
       textAlign: "center",
-      margin: 5
+    
+      fontSize:"32px",
+      fontWeight:800,
+      fontFamily:"Nunito"
     }
   
 }

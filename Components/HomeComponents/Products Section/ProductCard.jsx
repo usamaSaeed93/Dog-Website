@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, Typography, Box, Rating } from '@mui/material';
-import logo from '../../../Assets/Images/png/pet3.png'
+import pet1 from '../../../Assets/Images/png/pet1.png'
 const ProductCard = (elem) => {
   return (
     <Card  sx={{ maxWidth: 437, maxHeight: 170, margin:"4px", 
@@ -11,7 +11,7 @@ const ProductCard = (elem) => {
       <CardContent>
         <Box display="flex" alignItems="center">
           <img
-            src={`"${elem.des.imageSrc}"`}
+            src={pet1}
             alt="Dog"
             style={{ width: '180px', height: '120px', marginRight: '10px' }}
           />

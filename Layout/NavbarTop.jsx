@@ -8,7 +8,7 @@ import MailIcon from '@mui/icons-material/Mail';
 
 export default function NavbarTop () {
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'space-evenly', height: 40, bgcolor: '#9C5BF5' }}>
+    <Box sx={{ display: 'flex', justifyContent: 'space-evenly', height: 40, bgcolor: '#9C5BF5',}}>
       <Box display="flex" alignItems="center" gap={2}>
         <FacebookIcon sx={{ color: 'white' }} />
         <InstagramIcon sx={{ color: 'white' }} />

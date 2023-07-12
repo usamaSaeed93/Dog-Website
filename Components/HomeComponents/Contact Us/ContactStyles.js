@@ -1,6 +1,6 @@
 const ContactsStyles = {
     heading: {
-      fontSize: 46,
+      fontSize: "46px",
       fontWeight: 800,
       textAlign: "center",
       margin:4,

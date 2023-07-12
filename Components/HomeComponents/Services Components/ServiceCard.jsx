@@ -1,21 +1,37 @@
-import React from 'react';
-import { Card, CardContent, Avatar, Typography, Link, Box, IconButton } from '@mui/material';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import {containerStyle,cardStyle,rowStyle,avatarStyle,descriptionStyle,priceStyle,linkStyle} from './Service.styles'
+import React from "react";
+import {
+  Card,
+  CardContent,
+  Avatar,
+  Typography,
+  Link,
+  Box,
+  IconButton,
+} from "@mui/material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import {
+  containerStyle,
+  cardStyle,
+  rowStyle,
+  avatarStyle,
+  descriptionStyle,
+  priceStyle,
+  linkStyle,
+  titleStyle
+} from "./Service.styles";
 
-
-const   ServiceCard = ({title,img}) => {
+const ServiceCard = ({ title, img }) => {
   return (
-    <Card style={cardStyle}>
+    <Card style={cardStyle} margin="auto">
       <CardContent>
         <Box style={containerStyle}>
           <div>
             <Box style={rowStyle}>
               <Avatar style={avatarStyle} src={img} />
-              <Typography variant="h6">{title}</Typography>
+              <Typography style={titleStyle}>{title}</Typography>
             </Box>
             <Typography style={descriptionStyle} variant="body2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci facilis autem sit, architecto dolorum id aliquam saepe quaerat sint optio.
+            Et odio pellentesque diam volutpat commodo sed egestas egestas  pellentesque nec nam 
             </Typography>
           </div>
           <div>
@@ -25,12 +41,15 @@ const   ServiceCard = ({title,img}) => {
               </Typography>
             </Box>
             <Box style={rowStyle}>
-              <Link style={linkStyle} href="/">
-                Learn More
+              <Link style={linkStyle} href="/" fontWeight={800}>
+                Get Services
                 <IconButton size="small">
-                  <ArrowForwardIcon  sx={{
-                    color:"#7f5cd4"
-                  }}/>
+                  <ArrowForwardIcon
+                    sx={{
+                      color: "#7f5cd4",
+                      fontWeight:800
+                    }}
+                  />
                 </IconButton>
               </Link>
             </Box>

@@ -5,10 +5,14 @@ import imig from '../../../Assets/Images/png/Img.png'
 import white from '../../../Assets/Images/png/whitedog.png'
 import groomer from '../../../Assets/Images/png/groomer.png'
 import Typography from '@mui/material/Typography';
+import {blogHeading ,blogsmall} from './Blog.styles'
 const PostSection = () => {
   return (
     <>
-    <Typography variant="h6" align="center" margin={6}>
+   
+    <Typography variant="h6" align="center" margin={6} sx={
+      blogHeading
+    }>
         Other Posts
       </Typography>
     <Box

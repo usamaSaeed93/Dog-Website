@@ -5,10 +5,12 @@ export const newslettermain={
         backgroundSize: 'contain',
         backgroundPosition: 'center',
         width:"100%",
+        maxWidth:"1300px",
+        margin:"auto",
        height:"500px",
       display:"flex",
-      gap:"50%",
-      justifyContent:"center",
+      // gap:"35%",
+      justifyContent:"space-between",
       alignItems:"center",
      
              

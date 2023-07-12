@@ -30,27 +30,35 @@ export const columnStyle = {
 
 export const headingStyle = {
     width: "auto",
-    fontSize: "50px",
+    fontSize: "68px",
     textJustify: "justify",
-    font: "extraBold",
+  fontFamily: 'Nunito',
+  maxWidth:"633px",
+    fontWeight:"800",
     '@media (max-width:1200px)': {
         width:"auto"
     },
     '@media (max-width:900px)': {
-        fontSize: "30px",
+        fontSize: "50px",
         width:"auto"
     },
     '@media (max-width:600px)': {
-        fontSize: "20px",
+        fontSize: "40px",
         width: "70%",
+        
     },
 };
 
 export const paragraphStyle = {
-    width: "50%",
+    maxWidth: "530px",
+    height:"78px",
     fontSize: "18px",
+    fontFamily: 'Nunito',
     textJustify: "justify",
-    font: "extraBold",
+   fontWeight:"400",
+   color:"#1C103B",
+   paddingTop:"20px",
+   paddingBottom:"50px",
     '@media (max-width:1200px)': {
         width:"auto"
     },
@@ -95,11 +103,23 @@ width:"600px"
 export const backgroundStyle={
     backgroundImage: `url(${hero})`,
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundSize:"70% 100%",
     backgroundPosition: 'right',
     width: '100%',
     height: '100%',
     '@media (max-width:900px)': {
-       backgroundSize: 'cover',
+        backgroundSize:"70% 100%",
+    },
+    '@media (max-width:500px)': {
+        backgroundSize:"85% 100%",
     }
+}
+export const spanStyle={
+    color: "#7C58D3"
+,fontFamily: "Nunito",
+fontSize: "16px",
+fontStyle:" normal",
+fontWeight: "700",
+lineHeight:" 19px",
+textTransform: "uppercase",
 }

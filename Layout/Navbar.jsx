@@ -26,7 +26,7 @@ const Navbar = () => {
           <li className="active">Pages</li>
         </ul>
         <button className="button" style={styles.button}>
-       (1 Item ) <ShoppingCartIcon sx={{color:"#7C58D3"}}/>
+        <ShoppingCartIcon sx={{color:"#7C58D3"}}/> 1 Item 
         </button>
       </div>
     </nav>

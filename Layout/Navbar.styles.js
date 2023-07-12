@@ -69,9 +69,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-evenly',
-  
-   
-   
+  paddingTop:"20px",
     '@media (max-width:900px)':{
   display:"none"
     }
@@ -114,11 +112,24 @@ const styles = {
     marginTop:"20px"
   },
   button: {
+    width:"120px",
+    height:"50px",
+    gap:"8px",
+  
     padding: '10px 20px',
     backgroundColor: '#fff',
     color: '#000',
     border: 'none',
     borderRadius: '5px',
+    textAlign:"center",
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+    '@media (max-width:400px)':{
+      fontSize:"12px",
+      gap:"0px",
+      marginRight:"5px"
+    }
   },
 };
 

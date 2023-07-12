@@ -12,13 +12,14 @@ import {
   paragraphStyle,
   imageBoxStyle,
   dogImageStyle,
+  spanStyle
 } from "./TopSection.styles";
 function TopSection() {
   return (
     <>
       <Box sx={containerStyle}>
         <Box sx={columnStyle}>
-          <Typography variant="h6" component="h6">
+          <Typography style={spanStyle}>
             We care for your pets.
           </Typography>
           <Typography variant="h4" component="h1" sx={headingStyle}>
@@ -34,14 +35,17 @@ function TopSection() {
             sx={{
               display: "flex",
               flexDirection: "column",
+              gap:"20px"
             }}
           >
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "row",
+                gap:"56px",
                 "@media (max-width:900px)": {
                   flexDirection: "column",
+                  gap:"20px"
                 },
               }}
             >
@@ -53,8 +57,10 @@ function TopSection() {
               sx={{
                 display: "flex",
                 flexDirection: "row",
+                gap:"56px",
                 "@media (max-width:900px)": {
                   flexDirection: "column",
+                  gap:"20px"
                 },
               }}
             >

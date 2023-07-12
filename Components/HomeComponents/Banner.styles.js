@@ -4,8 +4,11 @@ export const bannerStyle={
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        width: 'auto',
+        maxWidth:"1200px",
+        width:"100%",
+        margin:"auto",
         height: '200px',
+      paddingX:"50px",
         display: "flex",
         flexDirection: "row",
         gap:"100px",
@@ -13,11 +16,20 @@ export const bannerStyle={
         alignItems: "center",
         '@media (max-width:1000px)':{
 height:"120px",
-gap:"40px"
+width:"80%",
+gap:"40px",
+MarginLeft:"50px",
+
+
         },
         '@media (max-width:600px)':{
-            width: 'auto',
-            height:"120px",
-            gap:"10px"
+                width:"80%",
+            height:"80px",
+            marginTop:"50px",
+        
+            gap:"20px",
+        
+           justifyContent:"space-between"
+            
                     }
 }

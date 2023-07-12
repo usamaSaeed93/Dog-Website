@@ -6,11 +6,15 @@ import layer2 from '../../../Assets/Images/png/Layer2.png'
 import {newslettermain} from './Newsletter.styles'
 function NewsLetter() {
     const imageStyle={
-        maxWidth:"400px",
-        maxHeight:"300px",
+        maxWidth:"250px",
+        maxHeight:"200px",
+        '@media (max-width:1200px)':{
+          width:"250px",
+          height:"200px",
+        },
         '@media (max-width:900px)':{
-          Width:"150px",
-          Height:"1500px",
+          width:"150px",
+          height:"150px",
         },
         '@media (max-width:600px)':{
          display:"none"

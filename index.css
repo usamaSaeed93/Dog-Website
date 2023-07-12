@@ -1,65 +1,66 @@
-html{
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&family=Space+Grotesk&display=swap");
+html {
   overflow-x: hidden;
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
+  margin: 0%;
+  padding: 0%;
 }
 
-body{
+body {
   overflow-x: hidden;
-  font-family:Inter,sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-@media (max-width:600px){
-  .tile_image{
-    width:60%;
-    margin-bottom:15px;
+@media (max-width: 600px) {
+  .tile_image {
+    width: 60%;
+    margin-bottom: 15px;
   }
 }
 
-.tile_2{
+.tile_2 {
   width: 200px;
   height: 70px;
-@media (max-width:900px){
-  width:120px;
-  height:50px;
+  @media (max-width: 900px) {
+    width: 120px;
+    height: 50px;
+  }
+  @media (max-width: 600px) {
+    width: 60px;
+    height: 30px;
+  }
 }
-@media (max-width:600px){
-  width:80px;
-  height:30px;
-}
-}
-.dog_img{ 
+.dog_img {
   width: 400px;
   height: 300px;
 }
 @media (max-width: 900px) {
-  .dog_img{
+  .dog_img {
     width: 150px;
     height: 150px;
   }
 }
 @media (max-width: 600px) {
-  .dog_img{
+  .dog_img {
     display: none;
   }
 }
 
-
-.dogImage{
+.dogImage {
   @media screen and (max-width: 1200px) {
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: auto;
   }
   @media screen and (max-width: 900px) {
-    width:450px;
-    height:auto;
+    width: 450px;
+    height: auto;
   }
 }
 .dot {
- 
   /* bottom: -5px;
   left: 50%;
   transform: translateX(-50%); */
@@ -74,25 +75,26 @@ code {
   font-weight: bold;
   cursor: pointer;
 }
-@media  screen and (max-width:900px) {
-  .active{
-    display:none;
+@media screen and (max-width: 900px) {
+  .active {
+    display: none;
   }
 }
-/* .active ::after{
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 6px;
-  height: 6px;
-  background-color: #000;
-  border-radius: 50%;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-} */
 
-.active:active{
+.active:active {
   font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .special {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .outer{
+    width: 80%;
+box-sizing: border-box;
+  }
+  .inner{
+    font-size: 20px;
+  }
 }
